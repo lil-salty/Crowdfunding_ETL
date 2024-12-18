@@ -1,56 +1,101 @@
-# Project 2: ETL Mini Project
+# Crowdfunding ETL Project
 
-## Overview:
-This project focuses on building an ETL (Extract, Transform, Load) pipeline to process crowdfunding data. 
-The data was extracted from Excel files, transformed into multiple DataFrames, and loaded into a PostgreSQL database.
-Key tasks included creating and exporting DataFrames, generating an ERD, and implementing a table schema.
+## Overview  
+This project focuses on building an ETL pipeline to extract, transform, and load data from Excel files into a PostgreSQL database. Using Python and Pandas, the data is transformed and exported into CSV files, which are later used to create an ERD and database schema.  
 
-## Languages & Tools Used:
-- Python
-- Pandas
-- Regular Expressions
-- PostgreSQL
+The project is divided into four main parts:  
+1. Create the Category and Subcategory DataFrames  
+2. Create the Campaign DataFrame  
+3. Create the Contacts DataFrame  
+4. Create the Crowdfunding Database  
 
-## Project Deliverables:
-1. Category DataFrame:
-   - Extracted and transformed "category" data.
-   - Generated a unique "category_id" for each category.
-   - Exported as `category.csv`.
+## Deliverables  
+- Transformed CSV files for category, subcategory, campaign, and contacts data  
+- ERD created using Lucidchart  
+- PostgreSQL database schema and SQL scripts for table creation and validation  
 
-2. Subcategory DataFrame:
-   - Extracted and transformed "subcategory" data.
-   - Generated a unique "subcategory_id" for each subcategory.
-   - Exported as `subcategory.csv`.
+## Technologies Used  
+- Python  
+- Pandas  
+- PostgreSQL  
+- Lucidchart  
 
-3. Campaign DataFrame:
-   - Extracted and transformed key fields from the `crowdfunding.xlsx` file.
-   - Renamed, converted, and cleaned columns (e.g., "goal", "pledged", and UTC times).
-   - Exported as `campaign.csv`.
+## File Structure  
 
-4. Contacts DataFrame:
-   - Extracted and transformed contact information from the `contacts.xlsx` file.
-   - Split the "name" column into "first_name" and "last_name".
-   - Exported as `contacts.csv`.
+- Crowdfunding_ETL/  
+  - **ETL_Mini_Project_DWallace_LSaltonstall.ipynb**  
+    - The Jupyter Notebook containing the ETL pipeline code.  
+  - **README.md**  
+    - Project documentation.  
 
-5. Crowdfunding Database:
-   - Created an ERD to design table relationships.
-   - Implemented a database schema in `crowdfunding_db_schema.sql`.
-   - Loaded the CSV files into corresponding PostgreSQL tables.
+  - **Resources/**  
+    - Contains input files and transformed CSV outputs.  
+      - **campaign.csv**  
+      - **category.csv**  
+      - **contacts.csv**  
+      - **subcategory.csv**  
+      - **crowdfunding.xlsx**  
 
-## Next Steps:
-- Complete Part 4: Additional insights and data analysis.
-- Optimize the ETL pipeline to handle larger datasets and edge cases.
+  - **Crowdfunding_Schema/**  
+    - Contains database schema, import scripts, and outputs.  
+      - **crowdfunding_db_schema.sql**  
+        - SQL schema file for creating the database tables.  
+      - **DataImportCSV.sql**  
+        - SQL script for importing CSV data into tables.  
+      - **Schema_Select_Statements.sql**  
+        - SQL queries to validate the data in tables.  
+      - **Schema_Select_Outputs/**  
+        - Output results from SELECT queries.  
+          - **campaign_output.csv**  
+          - **category_output.csv**  
+          - **contacts_output.csv**  
+          - **subcategory_output.csv**  
 
-## Contributors:
-- Lily Saltonstall
-- Daena Wallace
+  - **Project 2_ERD.pdf**  
+    - Contains the Entity Relationship Diagram (ERD) created in Lucidchart.  
 
-## Resources & Support:
-- ChatGPT: Assisted with structuring the ETL process, debugging code, and formatting this documentation.
-- Xpert Learning Assistant: Provided conceptual support for Pandas and Python implementation.
-- Pandas Documentation: Used for data extraction, cleaning, transformation, and exporting CSV files.
-- PostgreSQL Documentation: Used for creating and managing the database schema and tables.
+## Steps Completed  
 
-## Project Repository:
-- All data files, the primary Jupyter Notebook (`ETL_Mini_Project_DWallace_LSaltonstall.ipynb`), 
-  and schema files are available in the `Resources` folder.
+### 1. Create the Category and Subcategory DataFrames  
+Extracted and transformed the category and subcategory data from `crowdfunding.xlsx`.  
+- Split the "category & sub-category" column into separate "category" and "subcategory" columns.  
+- Created unique IDs for categories and subcategories.  
+- Saved results to:  
+  - `category.csv`  
+  - `subcategory.csv`  
+
+### 2. Create the Campaign DataFrame  
+Extracted campaign-related data from `crowdfunding.xlsx`.  
+- Renamed, cleaned, and converted columns to appropriate types.  
+- Merged category and subcategory IDs into the campaign table.  
+- Saved results to:  
+  - `campaign.csv`  
+
+### 3. Create the Contacts DataFrame  
+Extracted and transformed contact data from `contacts.xlsx`.  
+- Split the "name" column into "first_name" and "last_name".  
+- Removed duplicates and cleaned email data.  
+- Saved results to:  
+  - `contacts.csv`  
+
+### 4. Create the Crowdfunding Database  
+- Created the ERD using Lucidchart to define table relationships.  
+- Wrote the database schema and imported CSV files into PostgreSQL.  
+- Ran SELECT statements to verify the tables.  
+Files created:  
+- `crowdfunding_db_schema.sql`  
+- `DataImportCSV.sql`  
+- `Schema_Select_Statements.sql`  
+- Outputs saved in `Schema_Select_Outputs/`.  
+
+## Resources and Support  
+- Python Documentation  
+- Pandas Documentation  
+- PostgreSQL Documentation  
+- Lucidchart  
+- Xpert Learning Assistant  
+- Support from instructional team and learning assistants  
+
+## Contributors  
+Lily Saltonstall (LS): Developed the Category and Subcategory DataFrames, and transformed the Contacts DataFrame.  
+Daena Wallace (DW): Designed and implemented the Campaign DataFrame, and developed the Crowdfunding Database, including schema creation and data validation.  
