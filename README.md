@@ -16,34 +16,35 @@ The project is divided into four main parts:
 
 ## Technologies Used  
 - Python  
-- Pandas  
-- PostgreSQL  
+- Pandas
+- PostgreSQL (PgAdmin4)
 - Lucidchart  
 
 ## File Structure  
 
 - Crowdfunding_ETL/  
-  - **ETL_Mini_Project_DWallace_LSaltonstall.ipynb**  
-    - The Jupyter Notebook containing the ETL pipeline code.  
-  - **README.md**  
-    - Project documentation.  
+  
+  - ETL_Mini_Project_DWallace_LSaltonstall.ipynb - The Jupyter Notebook containing the ETL pipeline code.  
+  
+  - README.md - Project Overview  
 
-  - **Resources/**  
-    - Contains input files and transformed CSV outputs.  
+  - Resources/ - Contains input files and transformed CSV outputs.  
       - **campaign.csv**  
       - **category.csv**  
       - **contacts.csv**  
       - **subcategory.csv**  
       - **crowdfunding.xlsx**  
 
-  - **Crowdfunding_Schema/**  
-    - Contains database schema, import scripts, and outputs.  
+  - Crowdfunding_Schema/ - Contains database schema, import scripts, and outputs.  
       - **crowdfunding_db_schema.sql**  
         - SQL schema file for creating the database tables.  
+      
       - **DataImportCSV.sql**  
         - SQL script for importing CSV data into tables.  
+      
       - **Schema_Select_Statements.sql**  
         - SQL queries to validate the data in tables.  
+     
       - **Schema_Select_Outputs/**  
         - Output results from SELECT queries.  
           - **campaign_output.csv**  
@@ -51,8 +52,7 @@ The project is divided into four main parts:
           - **contacts_output.csv**  
           - **subcategory_output.csv**  
 
-  - **Project 2_ERD.pdf**  
-    - Contains the Entity Relationship Diagram (ERD) created in Lucidchart.  
+  - Project 2_ERD.pdf - Contains the Entity Relationship Diagram (ERD) created in Lucidchart.  
 
 ## Steps Completed  
 
@@ -94,8 +94,9 @@ Files created:
 - PostgreSQL Documentation  
 - Lucidchart  
 - Xpert Learning Assistant  
-- Support from instructional team and learning assistants  
+  
 
 ## Contributors  
 Lily Saltonstall (LS): Developed the Category and Subcategory DataFrames, and transformed the Contacts DataFrame.  
+
 Daena Wallace (DW): Designed and implemented the Campaign DataFrame, and developed the Crowdfunding Database, including schema creation and data validation.  
