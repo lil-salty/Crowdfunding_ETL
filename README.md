@@ -87,13 +87,14 @@ Files created:
 - `DataImportCSV.sql`  
 - `Schema_Select_Statements.sql`  
 - Outputs saved in `Schema_Select_Outputs/`.  
-
-## Resources and Support  
-- Python Documentation  
-- Pandas Documentation  
-- PostgreSQL Documentation  
-- Lucidchart  
-- Xpert Learning Assistant  
+  
+## Resources and Support
+- **Python Documentation**: General Python functionalities.
+- **Pandas Documentation**: Data manipulation and transformation.
+- **PostgreSQL Documentation**: SQL queries and database schema creation.
+- **Lucidchart**: ERD creation and visualization.
+- **ChatGPT (AI Assistant)**: Assisted in structuring workflows, debugging, and formatting.
+- **Xpert Learning Assistant**: Used for assistance in understanding and applying concepts
   
 
 ## Contributors  
