@@ -31,7 +31,8 @@ The project is divided into four main parts:
   - Resources/ - Contains input files and transformed CSV outputs.  
       - **campaign.csv**  
       - **category.csv**  
-      - **contacts.csv**  
+      - **contacts.csv**
+      - **contacts.xlsx**  
       - **subcategory.csv**  
       - **crowdfunding.xlsx**  
 
